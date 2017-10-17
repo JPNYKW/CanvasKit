@@ -21,7 +21,7 @@ function drawGrid(cont,x,y,size,width,height,bold,color){
 	for(i=0;i<width+1;i++){
 		drawLine(cont,baseX,baseY+i*size,baseX+width*size,baseY+i*size,bold,color);
 	}
-	for(i=0;i<width+1;i++){
+	for(i=0;i<height+1;i++){
 		drawLine(cont,baseX+i*size,baseY,baseX+i*size,baseY+height*size,bold,color);
 	}
 }
