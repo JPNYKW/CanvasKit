@@ -24,7 +24,7 @@ window.onload=()=>{
 // For demonstoration
 
 document.onkeydown=e=>{
-	if(e.keyCode==32){
+	if(e.keyCode==82){
 		cont.clearRect(0,0,canv.width,canv.height);
 	}
 }
