@@ -18,12 +18,13 @@
 * bold ... line width  
 * color ... line color  
 
-`drawGrid(cont,x,y,size,grids,bold,color)`  
+`drawGrid(cont,x,y,size,width,height,bold,color)`  
 * cont ... context  
 * x ... center xpos  
 * y ... center ypos  
 * size ... size of one gird    
-* grids ... width andd height grids
+* width ... width grids  
+* height ... height grids  
 * bold ... grid line width  
 * color ... grid line color  
 
