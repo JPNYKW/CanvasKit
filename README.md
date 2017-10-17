@@ -7,7 +7,7 @@
 2. Get 2d context of canvas  
 `var context = canvas.getContext('2d')`  
 
-## How to use this engine
+## Description of library functions
 
 `drawDot(cont,x,y,size,color)`  
 * cont ... context  
