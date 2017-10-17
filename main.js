@@ -17,9 +17,9 @@ window.onload=()=>{
 	drawLine(cont,50,128,590,128,3,'#F3F3F3');
 	drawLine(cont,50,512,590,512,3,'#F3F3F3');
 
-	drawGrid(cont,320,320,32,5,5,3,'#F3F3F3');
-	drawGrid(cont,320,320,640,1,1,32,'#C5C5C5');
-	drawGrid(cont,320,320,640,1,1,16,'#4D4D4D');
+	drawGrid(cont,320,320,32,5,3,'#F3F3F3');
+	drawGrid(cont,320,320,640,1,32,'#C5C5C5');
+	drawGrid(cont,320,320,640,1,16,'#4D4D4D');
 }
 
 // For demonstoration
