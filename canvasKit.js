@@ -15,15 +15,22 @@ function drawLine(cont,x,y,x1,y1,bold,color){
 	cont.stroke();
 }
 
-function drawGrid(cont,x,y,size,grids,bold,color){
-	let width=grids;
-	let height=grids;
-	baseX=x-width/2*size;
-	baseY=y-height/2*size;
-	for(i=0;i<grids+1;i++){
-		drawLine(cont,baseX,baseY+i*size,baseX+width*size,baseY+i*size,bold,color);
+function drawGrid(cont,x,y,size,width,height,bold,color){
+	let drawX,drawY;
+	drawY=y-height/2*size+size/2;
+	for(let i=0;i<height;i++){
+		drawX=x-width/2*size+size/2;
+		for(let j=0;j<width;j++){
+			drawBox(cont,drawX,drawY,size,bold,color);
+			drawX+=size;
+		}
+		drawY+=size;
 	}
-	for(i=0;i<grids+1;i++){
-		drawLine(cont,baseX+i*size,baseY,baseX+i*size,baseY+height*size,bold,color);
-	}
+}
+
+function drawBox(cont,x,y,size,bold,color){
+	cont.beginPath();
+	cont.lineWidth=bold;
+	cont.strokeStyle=color;
+	cont.strokeRect(x-size/2,y-size/2,size,size);
 }
