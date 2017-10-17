@@ -22,8 +22,10 @@
 * cont ... context  
 * x ... center xpos  
 * y ... center ypos  
-* size ... size of one gird  
+* size ... size of one gird    
 * width ... width grids  
-* height ... height grids
-* bold ... grid bold
-* color ... grid color
+* height ... height grids  
+* bold ... grid bold  
+* color ... grid color  
+
+*Project demo link : https://jpnykw.github.io/CanvasKit/*
