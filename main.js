@@ -1,3 +1,4 @@
+var $E;
 var canv,cont;
 var doc=document;
 
@@ -26,5 +27,36 @@ window.onload=()=>{
 document.onkeydown=e=>{
 	if(e.keyCode==82){
 		cont.clearRect(0,0,canv.width,canv.height);
+	}
+	if(e.keyCode==32){
+		$E=[];
+		switch (['DOT','LINE','GRID'][prompt('Select DOT,LINE,GRID / 0,1,2')]){
+			case 'DOT':
+				$E.push(prompt('Enter x pos'));
+				$E.push(prompt('Enter y pos'));
+				$E.push(prompt('Enter size'));
+				$E.push(prompt('Enter color (hex)'));
+				drawDot(cont,$E[0],$E[1],$E[2],$E[3]);
+			break;
+			case 'LINE':
+				$E.push(prompt('Enter start x pos'));
+				$E.push(prompt('Enter start y pos'));
+				$E.push(prompt('Enter end y pos'));
+				$E.push(prompt('Enter end y pos'));
+				$E.push(prompt('Enter bold'));
+				$E.push(prompt('Enter color (hex)'));
+				drawLine(cont,$E[0],$E[1],$E[2],$E[3],$E[4],$E[5]);
+			break;
+			case 'GRID':
+				$E.push(prompt('Enter x pos'));
+				$E.push(prompt('Enter y pos'));
+				$E.push(prompt('Enter grid size pos'));
+				$E.push(prompt('Enter grid width pos'));
+				$E.push(prompt('Enter grid height pos'));
+				$E.push(prompt('Enter bold'));
+				$E.push(prompt('Enter color (hex)'));
+				drawGrid(cont,$E[0],$E[1],$E[2],$E[3],$E[4],$E[5],$E[6]);
+			break;
+		}
 	}
 }
