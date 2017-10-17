@@ -16,14 +16,14 @@ function drawLine(cont,x,y,x1,y1,bold,color){
 }
 
 function drawGrid(cont,x,y,size,grids,bold,color){
-	width=grids;
-	height=grids;
+	let width=grids;
+	let height=grids;
 	baseX=x-width/2*size;
 	baseY=y-height/2*size;
-	for(i=0;i<width+1;i++){
+	for(i=0;i<grids+1;i++){
 		drawLine(cont,baseX,baseY+i*size,baseX+width*size,baseY+i*size,bold,color);
 	}
-	for(i=0;i<height+1;i++){
+	for(i=0;i<grids+1;i++){
 		drawLine(cont,baseX+i*size,baseY,baseX+i*size,baseY+height*size,bold,color);
 	}
 }
