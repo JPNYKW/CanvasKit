@@ -1,4 +1,4 @@
-# (JavaScript Library)
+# CanvasKit (JavaScript Library)
 
 ## How to use it
 
