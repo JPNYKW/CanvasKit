@@ -55,6 +55,7 @@ document.onkeydown=e=>{
 				$E.push(prompt('Enter bold'));
 				$E.push(prompt('Enter color (hex)'));
 				if($E[$E.length-1].substr(0,1)!=='#'){$E[$E.length-1]=`#${$E[$E.length-1]}`}
+				alert($E);
 				drawGrid(cont,$E[0],$E[1],$E[2],$E[3],$E[4],$E[5]);
 			break;
 		}
