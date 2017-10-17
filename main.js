@@ -30,7 +30,7 @@ document.onkeydown=e=>{
 	}
 	if(e.keyCode==32){
 		$E=[];
-		switch (['DOT','LINE','GRID'][prompt('Select DOT,LINE,GRID / 0,1,2')]){
+		switch (['DOT','LINE','GRID','BOX'][prompt('Select DOT,LINE,GRID / 0,1,2,3')]){
 			case 'DOT':
 				$E.push(prompt('Enter x pos'));
 				$E.push(prompt('Enter y pos'));
@@ -57,6 +57,14 @@ document.onkeydown=e=>{
 				$E.push(prompt('Enter color (hex)'));
 				if($E[$E.length-1].substr(0,1)!=='#'){$E[$E.length-1]=`#${$E[$E.length-1]}`}
 				drawGrid(cont,~~$E[0],~~$E[1],~~$E[2],~~$E[3],~~$E[4],~~$E[5],$E[6]);
+			break;
+			case 'BOX':
+				$E.push(prompt('Enter x pos'));
+				$E.push(prompt('Enter y pos'));
+				$E.push(prompt('Enter size'));
+				$E.push(prompt('Enter bold'));
+				$E.push(prompt('Enter color'));
+				drawBox(cont,~~$E[0],~~$E[1],~~$E[2],~~$E[3],$E[4]);
 			break;
 		}
 	}
