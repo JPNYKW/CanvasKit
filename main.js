@@ -36,7 +36,7 @@ document.onkeydown=e=>{
 				$E.push(prompt('Enter y pos'));
 				$E.push(prompt('Enter size'));
 				$E.push(prompt('Enter color (hex)'));
-				drawDot(cont,$E[0],$E[1],$E[2],$E[3]);
+				drawDot(cont,~~$E[0],~~$E[1],~~$E[2],$E[3]);
 			break;
 			case 'LINE':
 				$E.push(prompt('Enter start x pos'));
@@ -45,7 +45,7 @@ document.onkeydown=e=>{
 				$E.push(prompt('Enter end y pos'));
 				$E.push(prompt('Enter bold'));
 				$E.push(prompt('Enter color (hex)'));
-				drawLine(cont,$E[0],$E[1],$E[2],$E[3],$E[4],$E[5]);
+				drawLine(cont,~~$E[0],~~$E[1],~~$E[2],~~$E[3],~~$E[4],$E[5]);
 			break;
 			case 'GRID':
 				$E.push(prompt('Enter x pos'));
@@ -55,8 +55,7 @@ document.onkeydown=e=>{
 				$E.push(prompt('Enter bold'));
 				$E.push(prompt('Enter color (hex)'));
 				if($E[$E.length-1].substr(0,1)!=='#'){$E[$E.length-1]=`#${$E[$E.length-1]}`}
-				alert($E);
-				drawGrid(cont,$E[0],$E[1],$E[2],$E[3],$E[4],$E[5]);
+				drawGrid(cont,~~$E[0],~~$E[1],~~$E[2],~~$E[3],~~$E[4],$E[5]);
 			break;
 		}
 	}
