@@ -51,11 +51,10 @@ document.onkeydown=e=>{
 				$E.push(prompt('Enter x pos'));
 				$E.push(prompt('Enter y pos'));
 				$E.push(prompt('Enter grid size'));
-				$E.push(prompt('Enter grid width'));
-				$E.push(prompt('Enter grid height'));
+				$E.push(prompt('Enter grid grids'));
 				$E.push(prompt('Enter bold'));
 				$E.push(prompt('Enter color (hex)'));
-				drawGrid(cont,$E[0],$E[1],$E[2],$E[3],$E[4],$E[5],$E[6]);
+				drawGrid(cont,$E[0],$E[1],$E[2],$E[3],$E[4],$E[5]);
 			break;
 		}
 	}
