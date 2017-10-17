@@ -41,7 +41,7 @@ document.onkeydown=e=>{
 			case 'LINE':
 				$E.push(prompt('Enter start x pos'));
 				$E.push(prompt('Enter start y pos'));
-				$E.push(prompt('Enter end y pos'));
+				$E.push(prompt('Enter end x pos'));
 				$E.push(prompt('Enter end y pos'));
 				$E.push(prompt('Enter bold'));
 				$E.push(prompt('Enter color (hex)'));
