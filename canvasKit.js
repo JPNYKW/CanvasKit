@@ -25,3 +25,16 @@ function drawGrid(cont,x,y,size,width,height,bold,color){
 		drawLine(cont,baseX+i*size,baseY,baseX+i*size,baseY+height*size,bold,color);
 	}
 }
+
+function drawBox(cont,x,y,grids,bold,color){
+	width=grids;
+	height=grids;
+	baseX=x-width/2*width;
+	baseY=y-height/2*height;
+	for(i=0;i<2;i++){
+		drawLine(cont,baseX,baseY+i*height,baseX+width,baseY+i*height,bold,color);
+	}
+	for(i=0;i<2;i++){
+		drawLine(cont,baseX+i*width,baseY,baseX+i*width,baseY+height,bold,color);
+	}
+}
