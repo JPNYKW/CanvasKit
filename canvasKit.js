@@ -15,7 +15,9 @@ function drawLine(cont,x,y,x1,y1,bold,color){
 	cont.stroke();
 }
 
-function drawGrid(cont,x,y,size,width,height,bold,color){
+function drawGrid(cont,x,y,size,grids,bold,color){
+	width=grids;
+	height=grids;
 	baseX=x-width/2*size;
 	baseY=y-height/2*size;
 	for(i=0;i<width+1;i++){
@@ -23,18 +25,5 @@ function drawGrid(cont,x,y,size,width,height,bold,color){
 	}
 	for(i=0;i<height+1;i++){
 		drawLine(cont,baseX+i*size,baseY,baseX+i*size,baseY+height*size,bold,color);
-	}
-}
-
-function drawBox(cont,x,y,grids,bold,color){
-	width=grids;
-	height=grids;
-	baseX=x-width/2*width;
-	baseY=y-height/2*height;
-	for(i=0;i<2;i++){
-		drawLine(cont,baseX,baseY+i*height,baseX+width,baseY+i*height,bold,color);
-	}
-	for(i=0;i<2;i++){
-		drawLine(cont,baseX+i*width,baseY,baseX+i*width,baseY+height,bold,color);
 	}
 }
