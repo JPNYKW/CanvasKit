@@ -1,6 +1,7 @@
+var canv,cont;
+var doc=document;
+
 window.onload=()=>{
-	var canv,cont;
-	var doc=document;
 	canv=doc.getElementById('drawArea');
 	cont=canv.getContext('2d');
 	canv.style.backgroundColor='#2C2C2C';
@@ -18,4 +19,12 @@ window.onload=()=>{
 	drawGrid(cont,320,320,32,5,5,3,'#F3F3F3');
 	drawGrid(cont,320,320,640,1,1,32,'#C5C5C5');
 	drawGrid(cont,320,320,640,1,1,16,'#4D4D4D');
+}
+
+// For demonstoration
+
+document.onkeydown=e=>{
+	if(e.keyCode==32){
+		cont.clearRect(0,0,canv.width,canv.height);
+	}
 }
