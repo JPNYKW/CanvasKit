@@ -43,16 +43,30 @@
 * bold ... box line bold  
 * color ... box line color  
 
+`drawFillBox(cont,x,y,size,color)`  
+* cont ... context  
+* x ... center x pos  
+* y ... center y pos  
+* size ... box size
+* color ... fill color of box  
+
 ## Demo codes
-`var canvas = document.getElementById('canvas')`  
-`var context = canvas.getContext('2d')`  
+```
+var canvas = document.getElementById('canvas')
+var context = canvas.getContext('2d')
 
-`canvas.width=640`  
-`canvas.height=640`  
+canvas.width=640
+canvas.height=640
 
-`drawDot(context,320,120,16,'#FFF') // (320,120) Size:16 Color:#FFF`  
-`drawLine(context,220,200,420,200,3,'#FFF') // (220,200) => (420,200) Bold:3 Color:#FFF`  
-`drawGrid(context,320,320,10,5,5,3,'#FFF') // (320,320) Size:5x5 Grid-size:10 Bold:3 Color:#FFF`  
-`drawBox(context,320,480,20,3,'#FFF') // (320,480) Box-size:20 Bold:3 Color:#FFF`  
+drawDot(context,320,120,16,'#FFF') // (320,120) Size:16 Color:#FFF
 
-*Project demo link : https://jpnykw.github.io/CanvasKit/*
+drawLine(context,220,200,420,200,3,'#FFF') // (220,200) => (420,200) Bold:3 Color:#FFF
+
+drawGrid(context,320,320,10,5,5,3,'#FFF') // (320,320) Size:5x5 Grid-size:10 Bold:3 Color:#FFF
+
+drawBox(context,320,480,20,3,'#FFF') // (320,480) Box-size:20 Bold:3 Color:#FFF
+
+drawFillBox(context,320,540,30,'#FFF // (320,320) Box-size:30 Color:#FFF (Fill)
+```
+
+[DEMO PROJECT PAGE](https://jpnykw.github.io/CanvasKit/)
