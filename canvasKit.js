@@ -34,3 +34,8 @@ function drawBox(cont,x,y,size,bold,color){
 	cont.strokeStyle=color;
 	cont.strokeRect(x-size/2,y-size/2,size,size);
 }
+
+function drawFillBox(cont,x,y,size,color){
+	cont.fillStyle=color;
+	cont.fillRect(x-size/2,y-size/2,size,size);
+}
