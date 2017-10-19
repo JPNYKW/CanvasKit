@@ -21,7 +21,7 @@ window.onload=()=>{
 	drawGrid(cont,320,320,640,1,1,32,'#C5C5C5');
 	drawGrid(cont,320,320,640,1,1,16,'#4D4D4D');
 	
-	drawText(cont,'CanvasKit.js',320,380,'Arial',2,50,'#EEE',true);
+	drawText(cont,'CanvasKit.js',320,500,'Arial',2,50,'#EEE',true);
 }
 
 // For demonstoration
