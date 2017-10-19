@@ -50,6 +50,17 @@
 * size ... box size
 * color ... fill color of box  
 
+`drawText(cont,text,x,y,font,bold,size,color,center)`  
+* cont ... context
+* text ... draw text
+* x ... text x pos  
+* y ... text y pos  
+* font ... text font  
+* bold ... text bold  
+* size ... text size  
+* color ... text color  
+* center ... x,y for center  
+
 ## Demo codes
 ```
 var canvas = document.getElementById('canvas')
