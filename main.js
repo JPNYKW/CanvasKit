@@ -30,7 +30,7 @@ document.onkeydown=e=>{
 	}
 	if(e.keyCode==32){
 		$E=[];
-		switch (['DOT','LINE','GRID','BOX'][prompt('Select DOT,LINE,GRID / 0,1,2,3')]){
+		switch (['DOT','LINE','GRID','BOX'][prompt('Select DOT,LINE,GRID,BOX / 0,1,2,3')]){
 			case 'DOT':
 				$E.push(prompt('Enter x pos'));
 				$E.push(prompt('Enter y pos'));
