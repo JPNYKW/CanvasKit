@@ -20,6 +20,8 @@ window.onload=()=>{
 	drawGrid(cont,320,320,32,5,5,3,'#F3F3F3');
 	drawGrid(cont,320,320,640,1,1,32,'#C5C5C5');
 	drawGrid(cont,320,320,640,1,1,16,'#4D4D4D');
+	
+	drawText(cont,'CanvasKit.js',320,380,'Arial',2,50,'#EEE',true);
 }
 
 // For demonstoration
@@ -30,7 +32,7 @@ document.onkeydown=e=>{
 	}
 	if(e.keyCode==32){
 		$E=[];
-		switch (['DOT','LINE','GRID','BOX'][prompt('Select DOT,LINE,GRID,BOX / 0,1,2,3')]){
+		switch (['DOT','LINE','GRID','BOX','FILLBOX','TEXT'][prompt('Select DOT,LINE,GRID,BOX,FILLBOX,TEXT / 0,1,2,3,4,5')]){
 			case 'DOT':
 				$E.push(prompt('Enter x pos'));
 				$E.push(prompt('Enter y pos'));
@@ -65,6 +67,23 @@ document.onkeydown=e=>{
 				$E.push(prompt('Enter bold'));
 				$E.push(prompt('Enter color'));
 				drawBox(cont,~~$E[0],~~$E[1],~~$E[2],~~$E[3],$E[4]);
+			break;
+			case 'FILLBOX':
+				$E.push(prompt('Enter x pos'));
+				$E.push(prompt('Enter y pos'));
+				$E.push(prompt('Enter size'));
+				$E.push(prompt('Enter color'));
+				drawFillBox(cont,~~$E[0],~~$E[1],~~$E[2],$E[3]);
+			break;
+			case 'TEXT':
+				$E.push(prompt('Enter text'));
+				$E.push(prompt('Enter x pos'));
+				$E.push(prompt('Enter y pos'));
+				$E.push(prompt('Enter font'));
+				$E.push(prompt('Enter bold'));
+				$E.push(prompt('Enter size'));
+				$E.push(prompt('Enter color'));
+				drawText(cont,$E[0],~~$E[1],~~$E[2],$E[3],~~$E[4],~~$E[5],~~$E[6],$E[7]);
 			break;
 		}
 	}
