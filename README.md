@@ -50,7 +50,7 @@
 * size ... box size
 * color ... fill color of box  
 
-`drawText(cont,text,x,y,font,bold,size,color,center)`  
+`drawText(cont,text,x,y,font,bold,size,color,center,fill)`  
 * cont ... context
 * text ... draw text
 * x ... text x pos  
@@ -60,6 +60,7 @@
 * size ... text size  
 * color ... text color  
 * center ... x,y for center  
+* fill ... fill switfh false:stroke true:fill text  
 
 ## Demo codes
 ```
