@@ -83,7 +83,7 @@ document.onkeydown=e=>{
 				$E.push(prompt('Enter bold'));
 				$E.push(prompt('Enter size'));
 				$E.push(prompt('Enter color'));
-				drawText(cont,$E[0],~~$E[1],~~$E[2],$E[3],~~$E[4],~~$E[5],~~$E[6],$E[7]);
+				drawText(cont,$E[0],~~$E[1],~~$E[2],$E[3],~~$E[4],~~$E[5],~~$E[6],true,true);
 			break;
 		}
 	}
