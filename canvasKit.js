@@ -36,15 +36,16 @@ function drawBox(cont,x,y,size,bold,color){
 }
 
 function drawFillBox(cont,x,y,size,color){
+	cont.beginPath();
 	cont.fillStyle=color;
 	cont.fillRect(x-size/2,y-size/2,size,size);
 }
 
-function drawText(cont,text,x,y,font,bold,size,color,center){
+function drawText(cont,text,x,y,font,bold,size,color,center,fill){
 	cont.beginPath();
 	cont.font=`${size}px ${font}`;
-	cont.strokeStyle=color;
+	fill?cont.fillStyle=color:cont.strokeStyle=color;
 	cont.lineWidth=bold;
 	if(center){x-=text.length/2*(size/2);}
-	cont.strokeText(text,x,y);
+	fill?cont.fillText(text,x,y):cont.strokeText(text,x,y);
 }
