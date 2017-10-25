@@ -60,7 +60,7 @@
 * size ... text size  
 * color ... text color  
 * center ... x,y for center  
-* fill ... fill switfh false:stroke true:fill text  
+* fill ... fill switch false:stroke true:fill text  
 
 ## Demo codes
 ```
