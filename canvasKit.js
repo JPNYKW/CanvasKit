@@ -15,8 +15,6 @@ CanvasRenderingContext2D.prototype.drawLine=function(x,y,x1,y1,bold,color){
 	this.stroke();
 }
 
-
-
 CanvasRenderingContext2D.prototype.drawGrid=function(x,y,size,width,height,bold,color){
 	let drawX,drawY;
 	drawY=y-height/2*size+size/2;
