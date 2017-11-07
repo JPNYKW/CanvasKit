@@ -46,6 +46,6 @@ CanvasRenderingContext2D.prototype.drawText=function(text,x,y,font,bold,size,col
 	this.font=`${size}px ${font}`;
 	fill?this.fillStyle=color:this.strokeStyle=color;
 	this.lineWidth=bold;
-	if(center){x-=text.length/2*(size/2);}
+	this.textAlign=['right','center'][center+0];
 	fill?this.fillText(text,x,y):this.strokeText(text,x,y);
 }
