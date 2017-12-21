@@ -52,15 +52,25 @@
 
 `cont.drawText(text,x,y,font,bold,size,color,center,fill)`  
 * cont ... context
-* text ... draw text
-* x ... text x pos  
-* y ... text y pos  
-* font ... text font  
-* bold ... text bold  
-* size ... text size  
-* color ... text color  
+* text ... draw label
+* x ... x pos of text 
+* y ... y pos of text  
+* font ... font of text  
+* bold ... bold of text  
+* size ... size of text  
+* color ... color of text  
 * center ... x,y for center  
 * fill ... fill switch false:stroke true:fill text  
+
+`cont.drawPolygon(x,y,dir,rad,vertex,color,bold)`  
+* cont ... context  
+* x ... center x pos  
+* y ... cebter y pos  
+* dir ... direction of polygon  
+* rad ... radius of polygon  
+* vertex ... vertex of polygon  
+* color ... color of polygon  
+* bold ... bold of polygon  
 
 ## Demo codes
 ```
