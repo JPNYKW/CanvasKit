@@ -49,3 +49,17 @@ CanvasRenderingContext2D.prototype.drawText=function(text,x,y,font,bold,size,col
 	this.textAlign=['right','center'][center+0];
 	fill?this.fillText(text,x,y):this.strokeText(text,x,y);
 }
+
+CanvasRenderingContext2D.prototype.drawPolygon=function(x,y,dir,rad,vertex,color,bold){
+	var theta=dir;
+	this.beginPath();
+	this.lineWidth=bold;
+	this.strokeStyle=color;
+	this.moveTo(x+cos(theta*pi/180)*rad,y+sin(theta*pi/180)*rad);
+	for(i=vertex;i--;){
+		theta+=360/vertex;
+		this.lineTo(x+cos(theta*pi/180)*rad,y+sin(theta*pi/180)*rad);
+	}
+	this.closePath();
+	this.stroke();
+}
